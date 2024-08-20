@@ -1,9 +1,10 @@
 import Box from './Box';
+import { colorPalm } from '../utilities';
 
-export default function Section1(){
+export default function Section1() {
   return (
     <section>
-      <Box className='bg-gray text-yellow'>
+      <Box className={colorPalm['gray']}>
         <span>Creating the Future</span>
         <h2>Innovative AI Developer Team</h2>
         <p>
@@ -13,17 +14,17 @@ export default function Section1(){
         </p>
       </Box>
 
-      <Box className='bg-pink text-white'>
+      <Box className={colorPalm['pink']}>
         <h2>Transform </h2>
         <p>Rethinking business models</p>
       </Box>
 
-      <Box className='bg-blue text-white'>
+      <Box className={colorPalm['blue']}>
         <h2>Automate</h2>
         <p>Deploying robotics and other automation tools</p>
       </Box>
 
-      <Box className='bg-white text-pink'>
+      <Box className={colorPalm['white']}>
         <h2>Innovate</h2>
         <p>
           Achieved through a variety of methods, including experimentation,

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <Navbar />
-      <p>AI Developer Team</p>
+      <p>Code Club</p>
       <p>Privacy policy</p>
     </footer>
   );
