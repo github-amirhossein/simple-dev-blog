@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
+import './../App.css'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,8 +10,8 @@ export default function Header() {
   }
 
   return (
-    <header>
-      <div>AI Developer Team</div>
+    <header className=''>
+      <div className='text-yellow'>AI Developer Team</div>
 
       <button onClick={handleToggleMenu}>Menu</button>
 
