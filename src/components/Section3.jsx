@@ -8,21 +8,21 @@ export default function Section3() {
         <p>Case Study</p>
       </Box>
 
-      <Box className={colorPalm['yellow']}>
+      <Box className={colorPalm['yellow']} haveButton={false}>
         <span>33%</span>
         <span>Insurance</span>
         <h2>Revolutionizing the Insurance Industry</h2>
         <p>How an AI-Powered Chat Increased Sales by 33%</p>
       </Box>
 
-      <Box className={colorPalm['blue']}>
+      <Box className={colorPalm['blue']} haveButton={false}>
         <span>15%</span>
         <span>Retail</span>
         <h2>Enhancing Retail with AI</h2>
         <p>Store Boosted Sales by 15% Using Personalized Recommendations</p>
       </Box>
 
-      <Box className={colorPalm['pink']}>
+      <Box className={colorPalm['pink']} haveButton={false}>
         <span>40%</span>
         <span>Hospital</span>
         <h2>Revolutionizing the Insurance Industry</h2>
