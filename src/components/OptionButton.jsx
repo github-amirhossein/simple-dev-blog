@@ -9,7 +9,7 @@ export default function OptionButton({ children, icon='star' }) {
   return (
     <button className='flex items-center border px-4 py-2 rounded-full'>
       {children}
-      <img className='pl-3' src={iconSrc} alt='' />
+      <img className='pl-3' src={iconSrc} alt='icon' />
     </button>
   );
 }

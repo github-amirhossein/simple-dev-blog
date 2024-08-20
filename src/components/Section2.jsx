@@ -10,7 +10,7 @@ export default function Section2() {
       </p>
       <hr />
 
-      <div className='flex flex-wrap justify-around'>
+      <div className='flex flex-wrap justify-around gap-y-1'>
         <OptionButton>AI development</OptionButton>
         <OptionButton>Deep learning</OptionButton>
         <OptionButton>Industry 4.0</OptionButton>
