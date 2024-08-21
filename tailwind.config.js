@@ -11,6 +11,7 @@ export default {
       blue: '#4800E2',
       gray: '#222222',
       black: '#111111',
+      layback: '#111111aa'
     },
   },
   plugins: [],
