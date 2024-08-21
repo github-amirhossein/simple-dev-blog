@@ -6,7 +6,7 @@ export default function Box({ children, className, haveButton = true }) {
   return (
     <div className={tailwindClass}>
       {haveButton && (
-        <button className='absolute top-2 right-2 size-10 rounded-full text-3xl bg-black pb-1 text-white'>
+        <button className='absolute top-2 right-2 size-10 rounded-full text-3xl bg-white dark:bg-black text-black dark:text-white'>
           +
         </button>
       )}

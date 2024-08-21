@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
-import './../App.css';
+import { IconMenu } from './Icon';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,12 +10,12 @@ export default function Header() {
   }
 
   return (
-    <header className=''>
+    <header className='flex justify-between items-center py-4'>
       <div className='text-yellow'>Code Club</div>
-
-      <button onClick={handleToggleMenu}>Menu</button>
-
       {isMenuOpen && <Navbar />}
+      <button className='p-2' onClick={handleToggleMenu}>
+        <IconMenu className='fill-black dark:fill-white'/>
+      </button>
     </header>
   );
 }
