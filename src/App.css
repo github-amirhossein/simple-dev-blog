@@ -161,21 +161,19 @@ a{
 .box-about{
     width: 100%;
     padding:0 0 5% 0%;
-    height: auto;
+    height: 1600px;
     
 }
 .body-about-developer{
-    width: 80%;
+    width: 90%;
     padding:0% 2% 0 2% ;
-    display: flex;
-    margin-left: 8%;
+    margin-left: 7%;
     height: 400px;
 
 }
 .about-img-developer{
-    
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 380px;
     float: left;
 }
 .about-img-developer img{
@@ -184,7 +182,7 @@ a{
     opacity: 0.5;
     width: 95% ;
     height: 90%;
-    margin: 35px 1% 0 3%;
+    margin: 50px 1% 0 3%;
 }
 
 .about-img-developer img:hover{
@@ -210,7 +208,7 @@ a{
    border-radius:30px ;
     height: 295px;
     float: left;
-    width: 600px ;
+    width: 49% ;
     
     
 }
@@ -287,26 +285,26 @@ a{
     margin-bottom: 0px;
 }
 .body-about-developer1{
-    width: 85%;
+    width: 90%;
     padding:0% 2% 0 2% ;
     float: right;
-    margin-right: 7%;
+    margin-right: 2%;
     height: 370px;
    
 }
 .body-about-developer2{
-    width: 85%;
+    width: 95%;
     padding:0% 2% 0 2% ;
     float: right;
-    margin-right: 7%;
+    margin-right: 2%;
    
     height: 450px;
    
 }
 .about-img-developer1{
 
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 360px;
     float: right;
 }
 .about-matn-developer1{
@@ -321,7 +319,7 @@ a{
 .about-img-developer1 img{
     border-radius: 30px;
     width: 95% ;
-    height: 90%;
+    height: 100%;
     margin: 0 5% 0 2%;
     opacity: 0.5;
 }
@@ -458,8 +456,85 @@ a{
     .matn-developer-p{
         width: 90%;
     }
+    .box-about{
+        height: 2100px;
+    }
+}
+@media only screen and (max-width:870px) {
+
+.body-about-developer{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 720px;
+   
+   
+}
+.about-img-developer{
+    height: 360px;
+    width: 100%;
+}
+.about-matn-developer{
+    margin: 0;
+    width: 100%;
+}
+.body-about-developer1{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 740px;
+   
+   
+}
+.about-img-developer1{
+    
+    width: 100%;
+}
+.about-img-developer1 img{
+    margin: 0;
+    width: 100%;
+}
+.about-img-developer2 img{
+    margin: 0;
+    width: 100%;
+}
+.about-img-developer img{
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 340px;
+}
+.about-matn-developer1{
+    margin: 0;
+    width: 100%;
+}
+.body-about-developer2{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 800px;
+   
+   
+}
+.about-img-developer2{
+    
+    width: 100%;
+}
+.about-matn-developer2{
+    margin: 0;
+    height: 350px;
+    width: 100%;
 }
 
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -544,26 +619,22 @@ a{
 
 
 }
-@media only screen and (max-width:520px) {
-    .header-team{
-        display: none;
-    }
+@media only screen and (max-width:535px) {
     
     .join-team{
-        width: 35%;
+     display: none;
     }
     nav{
         width: 10%;
         height: 30px;
         margin-top: 10px;
+        float: right;
     }
     nav ul{
         display: none !important;
     }
     .hide{
         display: inline-block !important;
-       
-        
         width: 30px;
         height: 30px;
     }
@@ -588,5 +659,17 @@ a{
     .matn-head-body-about p{
         font-size: 13px;
     }
+    .all-project{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
 }
 
