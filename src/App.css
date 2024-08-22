@@ -1,4 +1,8 @@
-
+@font-face{
+    font-family: paci;
+    font-weight: 200;
+    src: url(./font/Pacifico.ttf);
+}
 
 *{
     color: aliceblue;
@@ -166,7 +170,7 @@ a{
     display: flex;
     margin-left: 8%;
     height: 400px;
-    background-color: rgb(16, 15, 15);
+
 }
 .about-img-developer{
     
@@ -235,7 +239,7 @@ a{
 .matn-developer-p button{
     cursor: pointer;
    border-radius: 10px;
-    width: 150px;
+    width: 135px;
     height: 40px;
     float: right;
     margin-top: 10px;
@@ -251,8 +255,9 @@ a{
 }
 .matn-developer-p button p{
     text-align: left;
-    margin: 10px 0px;
+    margin: 2px 0px;
     font-size: 14px;
+    font-family: paci;
 }
 .masol{
     margin: 25px;
@@ -287,7 +292,7 @@ a{
     float: right;
     margin-right: 7%;
     height: 370px;
-    background-color: rgb(16, 15, 15);
+   
 }
 .body-about-developer2{
     width: 85%;
@@ -296,7 +301,7 @@ a{
     margin-right: 7%;
    
     height: 450px;
-    background-color: rgb(16, 15, 15);
+   
 }
 .about-img-developer1{
 
@@ -310,7 +315,7 @@ a{
    margin-top: 0;
     height: 360px;
     float: right;
-    width: 450px;
+    width: 470px;
     
 }
 .about-img-developer1 img{
@@ -323,12 +328,12 @@ a{
 .about-img-developer2{
     width: 470px;
     height: 450px;
-    float: right;
+    float: left;
 }
 .about-img-developer2 img{
     border-radius: 30px;
     width: 95% ;
-    height: 90%;
+    height: 100%;
     margin: 0 0% 0 3%;
     opacity: 0.5;
 }
@@ -336,9 +341,9 @@ a{
     background-color: #0f00e3;
    border-radius:30px ;
    margin-top: 0;
-    height: 320px;
-    float: right;
-    width: 333px;
+    height: 360px;
+    float: left;
+    width: 433px;
     margin-right: 10px;
     
 }
