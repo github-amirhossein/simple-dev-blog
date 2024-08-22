@@ -82,7 +82,7 @@ export default function  About(){
 
    
     <p className='mar-but'> 
-    Computer engineering student of Mazandaran University of Science and Technology. <br />
+    Computer engineering student of Mazandaran University of Science and Technology.💻 <br />
     Front End in the Code Club team. 
      </p>
      <h2>
@@ -132,15 +132,16 @@ export default function  About(){
     </div>
 
 
+  </div>
 
-    
+
   <div className="body-about-developer">
     <div className="about-img-developer">
     <img src={imgr5} alt="prooof" />
     </div>
     <div className="about-matn-developer">
       <div className="masol">
-        <p>Back-end Developer</p>
+        <p>Front-end Developer</p>
       </div>
       <div className="card">
       <img src={imgr1} alt="prooof" />
@@ -149,12 +150,11 @@ export default function  About(){
     <div className="matn-developer-p">
 
 
-    <p> hi this is hooman <span>👋</span> <br />
-    im one of the main back-end developers in code club happy to see you here we im from iran
-     , tehran 19 years old and student of zanjan university in cs expected to get my degree in 3 years from now. <span>🙂</span> 
-     </p>
+    <p> 
+
+    </p>
      <h2>
-      Hooman
+      Omid
      </h2>
      <button>
      <img src={imgr2} alt="prooof" />
@@ -162,19 +162,15 @@ export default function  About(){
      </button>
      
     </div>
+    
     </div>
 
 
-  </div>
 
 
+    </div>
 
-
-
-
-
-
-
+   
   </div>
     <div className="cl"></div>
 
@@ -252,7 +248,6 @@ export default function  About(){
 
 
 
-    </div>
 
 
 
