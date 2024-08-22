@@ -4,6 +4,8 @@ import imgr2 from '../img/coffee-cup.png'
 import imgr3 from '../img/amir.jpg'
 import imgr4 from '../img/Hossein.jpg'
 import exit from '../img/logout.png'
+import imgr5 from '../img/omid.jpg'
+
 
 
 
@@ -129,6 +131,50 @@ export default function  About(){
     <img src={imgr4} alt="prooof" />
     </div>
 
+
+
+    
+  <div className="body-about-developer">
+    <div className="about-img-developer">
+    <img src={imgr5} alt="prooof" />
+    </div>
+    <div className="about-matn-developer">
+      <div className="masol">
+        <p>Back-end Developer</p>
+      </div>
+      <div className="card">
+      <img src={imgr1} alt="prooof" />
+      </div>
+      <div className="cl"></div>
+    <div className="matn-developer-p">
+
+
+    <p> hi this is hooman <span>👋</span> <br />
+    im one of the main back-end developers in code club happy to see you here we im from iran
+     , tehran 19 years old and student of zanjan university in cs expected to get my degree in 3 years from now. <span>🙂</span> 
+     </p>
+     <h2>
+      Hooman
+     </h2>
+     <button>
+     <img src={imgr2} alt="prooof" />
+     <p> Buy me a coffee </p>
+     </button>
+     
+    </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
   </div>
     <div className="cl"></div>
 
@@ -185,6 +231,9 @@ export default function  About(){
       </div>
     </div>
 
+
+
+    
 
 
 
