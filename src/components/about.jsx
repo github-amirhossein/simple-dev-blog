@@ -139,7 +139,7 @@ export default function  About(){
   <div className="about-img-developer1">
     <img src={imgr5} alt="prooof" />
     </div>
-    <div className="about-matn-developer1">
+    <div className="about-matn-developer1 o">
       <div className="masol">
         <p>Front-end Developer</p>
       </div>
