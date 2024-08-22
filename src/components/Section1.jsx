@@ -4,6 +4,8 @@ import { colorPalm } from '../utilities';
 export default function Section1() {
   return (
     <section>
+      <h1 className='text-6xl p-4 font-caveat text-center'>Building a better web, together</h1>
+      
       <Box className={colorPalm['gray']}>
         <span>Creating the Future</span>
         <h2>Innovative AI Developer Team</h2>

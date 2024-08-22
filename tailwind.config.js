@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        caveat: ['Caveat, sans-serif'],
+      },
+    },
     colors: {
       white: '#FFFFFF',
       yellow: '#FFC700',
@@ -11,7 +14,7 @@ export default {
       blue: '#4800E2',
       gray: '#222222',
       black: '#111111',
-      layback: '#111111aa'
+      layback: '#111111aa',
     },
   },
   plugins: [],

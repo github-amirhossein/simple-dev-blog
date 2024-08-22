@@ -4,7 +4,7 @@ import { IconMenu } from './Icon';
 import { useLockBodyScroll } from '@uidotdev/usehooks';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleToggleMenu() {
     setIsMenuOpen((isMenuOpen) => !isMenuOpen);

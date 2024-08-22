@@ -25,6 +25,8 @@ export default function Navbar({ children, className }) {
         >
           <IconMoon />
         </button>
+
+        {/* close menu button */}
         {children}
       </div>
 
