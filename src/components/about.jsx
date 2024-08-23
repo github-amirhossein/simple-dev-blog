@@ -6,6 +6,7 @@ import imgr4 from '../img/Hossein.jpg'
 import exit from '../img/logout.png'
 import imgr5 from '../img/omid.jpg'
 import star from '../img/sparkle.png'
+import stars from '../img/sparkles.png'
 
 
 
@@ -241,6 +242,39 @@ export default function  About(){
 
 
 
+
+      </div>
+
+      
+      <div className="box-abi">
+        <div className="head-box-zard">
+          <button>+</button>
+    <div className="p-h">
+      <div className="p1">
+          <p className='ph1' >2021</p>
+      </div>
+      <div className="p2">    
+          <p></p>
+      </div>
+      <div className="p3 ppi">
+          <p className='ph-3'>Insurance</p>
+      </div>    
+    </div>
+        </div>
+        <div className="insurance">
+          <h2>Insurance Industry</h2>
+          <p>AI-Powered Chat Increased Sales</p>
+        </div>
+        <div className="but-retail">
+          <button className="ai-development abi">
+            <p>AI-developmen</p>
+            <img src={stars} alt="" />
+          </button>
+          <button className="indust abi">
+            <p>Industry 4.0</p>
+            <img src={stars} alt="" />
+          </button>
+        </div>
 
       </div>
 
