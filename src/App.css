@@ -203,7 +203,7 @@ a{
 
 
 .about-matn-developer{
-    background-color: #dbcd0b;
+    background-color: #e6bb12;
    margin-top: 100px;
    border-radius:20px ;
     height: 295px;
@@ -436,7 +436,10 @@ a{
     bottom: 25px;
     color: #59045f;
 }
-.Retail h2 , p{
+.Retail h2{
+    color: #59045f;
+}
+.Retail p{
     color: #59045f;
 }
 .but-retail{
@@ -486,6 +489,58 @@ a{
     width: 18px;
     height: 18px;
 }
+
+.box-abi{
+    border-radius: 35px;
+    margin-left: 20px;
+    width: 35% ;
+    height: 500px;
+    background-color: #0f00e3;
+    float: left;
+    position: relative;
+}
+.ph-3{
+    font-size: 90%;
+    margin: 10.5px;
+    color: #dbcd0b;
+}
+
+.insurance{
+    position: absolute;
+    left: 20px;
+    top: 250px;
+    
+}
+.insurance h2 , p{
+    color: #ffffff;
+
+
+}
+.abi{
+    background-color: #0f00e3;
+    border: 1px solid #ffffff;
+}
+.abi p{
+    color: #ffffff;
+
+}
+
+.ppi{width: 90px;}
+
+
+.box-zard:hover{
+transform: scale(1.1);
+z-index:99 ;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:970px) {
@@ -850,7 +905,15 @@ a{
     width: 100%;
     
 }
-
+.about-img-developer img{
+    opacity: 1;
+}
+.about-img-developer1 img{
+    opacity: 1;
+}
+.about-img-developer2 img{
+    opacity: 1;
+}
 
 
 
@@ -872,7 +935,7 @@ a{
         height: 320px;
     }
     .body-about-developer1{
-        height: 310px;
+        height: 300px;
     }
     .about-img-developer{
         height: 200px ;
@@ -893,6 +956,13 @@ a{
         margin-top: -20px;
         width: 80%;
        
+    }
+    .about-matn-developer2{
+        top: 180px;
+        height: 130px;
+    }
+    .body-about-developer2{
+        height: 320px;
     }
     .lia{
         margin: 10px !important;
