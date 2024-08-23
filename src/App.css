@@ -609,6 +609,89 @@ z-index:99 ;
     bottom: 60px;
 }
 
+/*contact*/
+
+.row{
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact-input{
+    width: 50%;
+    margin-bottom: 20px;
+  
+    
+    
+}
+.contact-input label{
+display: block;
+margin-bottom: 5px;
+
+}
+.contact-input input{
+    padding: 10px;
+    width: 90%;
+    border:1px solid #ccc ;
+    border-radius: 5px;
+
+}
+.massage{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.massage label{
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.contact-btn{
+    height: 50px;
+}
+.contact-btn input{
+    margin: 0 15px;
+    width: 90px;
+    height: 40px;
+    color: #000000;
+    font-size: 20px;
+}
+#massage{
+    margin: 1%;
+    width: 93%;
+    margin-bottom: 20px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 150px;
+}
+.contaneres{
+    text-align: right;
+    width:93% ;
+    height: 96%;
+    padding: 15px 5% 20px 30px ;
+    float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:970px) {
     .header-h1{
