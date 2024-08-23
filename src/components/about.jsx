@@ -278,6 +278,45 @@ export default function  About(){
 
       </div>
 
+      <div className="box-sefid">
+        <div className="head-box-zard">
+          <button>+</button>
+    <div className="p-h">
+      <div className="p1">
+          <p className='ph1' >2021</p>
+      </div>
+      <div className="p2">    
+          <p></p>
+      </div>
+      <div className="p3">
+          <p className='ph3'>Retail</p>
+      </div>    
+    </div>
+        </div>
+        <div className="Retail">
+          <h2>Retail whit AI</h2>
+          <p>Store Boosted Sales</p>
+        </div>
+        <div className="but-retail">
+          <button className="ai-development sefid">
+            <p>AI-developmen</p>
+            <img src={star} alt="" />
+          </button>
+          <button className="indust sefid">
+            <p>Industry 4.0</p>
+            <img src={star} alt="" />
+          </button>
+        </div>
+
+      </div>
+
+
+
+      
+
+
+
+
 
 
 
