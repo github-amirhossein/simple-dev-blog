@@ -205,7 +205,7 @@ a{
 .about-matn-developer{
     background-color: #dbcd0b;
    margin-top: 100px;
-   border-radius:30px ;
+   border-radius:20px ;
     height: 295px;
     float: left;
     width: 49% ;
@@ -309,7 +309,7 @@ a{
 }
 .about-matn-developer1{
     background-color: #555445;
-   border-radius:30px ;
+   border-radius:20px ;
    margin-top: 0;
     height: 360px;
     float: right;
@@ -337,7 +337,7 @@ a{
 }
 .about-matn-developer2{
     background-color: #0f00e3;
-   border-radius:30px ;
+   border-radius:20px ;
    margin-top: 0;
     height: 430px;
     float: left;
@@ -616,7 +616,16 @@ a{
     margin: 0px 3px 0px 0px;
     color: #000000;
     }
-
+    .masol{
+        width: 35%;
+        height: 10%;
+        margin-right: 0;
+    }
+    .masol p{
+        margin: 8px 0px;
+        font-size: 75%;
+        font-weight: 600;
+    }
 
 }
 @media only screen and (max-width:535px) {
@@ -662,9 +671,174 @@ a{
     .all-project{
         display: none;
     }
+    .hid{
+        display: none;
+    }
+
+    
+.body-about-developer{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 440px;
+   position: relative;
+   
+}
+.about-img-developer{
+    
+    height: 300px;
+    width: 100%;
+}
+.about-matn-developer{
+    border-radius: 20px;
+    position: absolute;
+    height: 160px;
+    margin-top: -30px;
+    width: 60%;
+    top: 300px;
+    
+}
+.body-about-developer1{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 440px;
+   position: relative;
+   
+   
+   
+}
+.about-img-developer1{
+     
+    height: 300px;
+    width: 100%;
+}
+.about-img-developer1 img{
+    margin: 0;
+    width: 100%;
+}
+.about-img-developer2 img{
+    margin: 0;
+    width: 100%;
+    z-index: 5;
+}
+.about-img-developer img{
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+}
+.about-matn-developer1{
+    position: absolute;
+    height: 160px;
+    margin-top: -30px;
+    width: 60%;
+    top: 300px;
+}
+.body-about-developer2{
+    margin: 0;
+    width: 60%;
+    padding: 0 20%;
+    height: 350px;
+   position: relative;
+   
+   
+}
+.about-img-developer2{
+    
+    height: 200px;
+    width: 100%;
+}
+.about-matn-developer2{
+    position: absolute;
+    height: 160px;
+   
+    width: 60%;
+    top: 180px;
+}
+.masol{
+    margin: 15px;
+}
+.masol p{
+    margin: 2px;
+    font-size: 10px;
+}
+.card img{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.matn-developer-p{
+    margin-top: 2%;
+    height: 30%;
+    float: left;
+    
+    width: 90%;
+}
+.matn-developer-p button {
+   display: none;
+}
+.lia{
+    margin-top: 10%;
+}
+.matn-developer-p h2{
+    margin: 10px;
+}
+.card{
+    width: 40px;
+    height: 40px;
+}
+.card img{
+    margin: 0;
+    margin-top: 6px;
+    width: 100%;
+    
+}
 
 
 
+
+
+}
+
+@media only screen and (max-width:444px) {
+   .masol{
+    padding-top: 5px;
+   }
+    .masol p{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width:400px) {
+
+    .body-about-developer{
+        height: 320px;
+    }
+    .body-about-developer1{
+        height: 310px;
+    }
+    .about-img-developer{
+        height: 200px ;
+    }
+    .about-matn-developer{
+        top: 220px;
+        height: 120px;
+
+    }
+    .about-img-developer1{
+        height: 200px ;
+    }
+    .about-matn-developer1{
+        top: 200px;
+        height: 120px;
+    }
+    .matn-developer-p{
+        margin-top: -20px;
+        width: 80%;
+       
+    }
+    .lia{
+        margin: 10px !important;
+    }
 
 
 
@@ -673,3 +847,11 @@ a{
 
 }
 
+
+
+@media only screen and (max-width:365px) {
+    .masol{
+        height: 20px;
+        padding: 0;
+       }
+}
