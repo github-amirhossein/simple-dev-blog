@@ -3,7 +3,7 @@ import noImage from './../assets/images/no-image-available.jpg';
 import { MemberBio } from './MemberBio';
 
 export default function Section2() {
-  const [currentBio, setCurrentBio] = useState(1);
+  const [currentBio, setCurrentBio] = useState(null);
 
   function handleOpenMoreInfo() {
     setCurrentBio(1);
@@ -16,35 +16,57 @@ export default function Section2() {
   return (
     <section className='items-between relative'>
       <h2 className='text-xl text-center pb-1'>Code Club Members Biograghie</h2>
-      <div className='grid grid-rows-subgrid gap-1 grid-cols-1'>
+      <div className='grid grid-rows-4 h-full py-4 pb-16 gap-1 grid-cols-1 md:grid-cols-2 md:grid-rows-2 m-auto'>
         <MemberBio
-          onOpenMorInfo={handleOpenMoreInfo}
+          onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}
           memberName='Amir'
         />
 
         <MemberBio
-          onOpenMorInfo={handleOpenMoreInfo}
+          onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}
           memberName='Hooman'
         />
 
         <MemberBio
-          onOpenMorInfo={handleOpenMoreInfo}
+          onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}
           memberName='Hossein'
         />
 
         <MemberBio
-          onOpenMorInfo={handleOpenMoreInfo}
+          onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}
           memberName='Omid'
         />
       </div>
 
       {currentBio && (
-        <div className='absolute w-full h-5/6 border-2 border-yellow bg-black top-16 z-40 left-0'>
-          <button onClick={handleCloseMoreInfo}>x</button>
+        <div className='absolute w-full h-[calc(100%-90px)] border-2 border-yellow bg-black top-[70px] z-20 left-0 p-8'>
+          <button className='text-3xl p-4 border' onClick={handleCloseMoreInfo}>
+            x
+          </button>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            possimus nesciunt! Ducimus maiores quaerat obcaecati aut itaque sit
+            harum. Libero illo voluptates et aut aperiam perspiciatis quia
+            explicabo sit adipisci?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+            iure sunt dolorem odit quos aliquam, natus accusamus animi
+            consectetur doloremque. Vitae eaque dignissimos officiis veniam
+            nihil. Laboriosam dolorum provident et!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            consectetur aspernatur veritatis repudiandae tenetur expedita
+            officiis unde quidem eum quam impedit assumenda, dolores ipsa beatae
+            id eius distinctio quibusdam officia.
+          </p>
         </div>
       )}
     </section>
