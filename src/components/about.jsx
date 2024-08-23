@@ -293,17 +293,17 @@ export default function  About(){
       </div>    
     </div>
         </div>
-        <div className="Retail">
-          <h2>Retail whit AI</h2>
-          <p>Store Boosted Sales</p>
+        <div className="bank">
+          <h2>Bank Of America</h2>
+          <p>Bank Improved Efficiency and Cut Costs</p>
         </div>
         <div className="but-retail">
           <button className="ai-development sefid">
-            <p>AI-developmen</p>
+            <p>Neural networks</p>
             <img src={star} alt="" />
           </button>
           <button className="indust sefid">
-            <p>Industry 4.0</p>
+            <p>Big data</p>
             <img src={star} alt="" />
           </button>
         </div>
