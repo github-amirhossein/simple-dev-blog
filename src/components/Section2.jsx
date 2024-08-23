@@ -16,7 +16,7 @@ export default function Section2() {
   return (
     <section className='items-between relative'>
       <h2 className='text-xl text-center pb-1'>Code Club Members Biograghie</h2>
-      <div className='grid grid-rows-4 h-full py-4 pb-16 gap-1 grid-cols-1 md:grid-cols-2 md:grid-rows-2 m-auto'>
+      <div className='grid py-4 pb-16 gap-1 grid-cols-1 md:grid-cols-2 m-auto'>
         <MemberBio
           onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}

@@ -11,7 +11,7 @@ export default function Header() {
   }
 
   return (
-    <header className='fixed top-0 left-0 z-30 bg-black w-full flex justify-between items-center py-4 px-3'>
+    <header className='fixed top-0 left-0 z-30 bg-black w-full flex justify-between items-center py-4 px-3 border-b-2 '>
       <div className='text-yellow'>Code Club</div>
 
       <Navbar className={isMenuOpen ? 'rotate-0' : 'rotate-90'}>

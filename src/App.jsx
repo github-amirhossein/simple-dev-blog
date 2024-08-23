@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className='pt-20 px-2'>
         <Section1 />
         <Section2 />
         <Section3 />
