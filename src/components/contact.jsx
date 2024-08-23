@@ -10,7 +10,8 @@ export default function Contact() {
         <div className="contact">
             <div className="content">
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ut?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deserunt ex nihil inventore vel mollitia veniam sed id dignissimos placeat beatae unde veritatis, 
+                    voluptatibus enim quibusdam necessitatibus minus totam delectus!</p>
             </div>
             <div className="container">
                 <div className="contactinfo">
