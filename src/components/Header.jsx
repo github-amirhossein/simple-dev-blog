@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import { IconMenu } from './Icon';
 import { useLockBodyScroll } from '@uidotdev/usehooks';
+import { ButtonDarkMode } from './ButtonDarkMode';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +12,11 @@ export default function Header() {
   }
 
   return (
-    <header className='fixed top-0 left-0 z-30 bg-black w-full flex justify-between items-center py-4 px-3 border-b-2 '>
-      <div className='text-yellow'>Code Club</div>
+    <header className='fixed text-2xl top-0 left-0 z-30 bg-[#eee] dark:bg-black w-full flex justify-between items-center py-4 px-3 border-b-0 dark:border-b-2'>
+      <div className=' flex gap-4 items-center'>
+        <span className='text-yellow'>Code Club</span>
+          <ButtonDarkMode className='scale-125 border-spacing-2' />
+      </div>
 
       <Navbar className={isMenuOpen ? 'rotate-0' : 'rotate-90'}>
         <ButtonMenu onToggleMenu={handleToggleMenu} />
