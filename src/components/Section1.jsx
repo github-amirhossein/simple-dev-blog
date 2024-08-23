@@ -1,6 +1,6 @@
 export default function Section1() {
   return (
-    <section>
+    <section className='h-screen flex flex-col justify-center items-center'>
       <h1 className='text-6xl p-4 font-caveat text-center'>
         Building a <span className='text-yellow'>better</span> web, together
       </h1>
@@ -9,12 +9,12 @@ export default function Section1() {
         We want to help you build beautiful, accessible, fast, and secure
         websites that work cross-browser, and for all of your users. This site
         is our home for content to help you on that journey, written by members
-        of the Chrome team, and external experts.
+        neque fugit dolorem iusto aperiam. Ullam sint magni tenetur!
       </p>
 
       <a
-        href=''
-        className='block mx-auto border-2 border-yellow py-2 w-40 text-center rounded-full my-2 mb-20'
+        href='/join'
+        className='block mx-auto border-2 border-yellow py-2 w-40 text-center rounded-full my-4 mb-20'
       >
         Hire Us
       </a>
