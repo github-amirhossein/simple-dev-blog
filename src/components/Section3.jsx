@@ -1,33 +1,50 @@
-import { colorPalm } from '../utilities';
-import Box from './Box';
-
 export default function Section3() {
   return (
     <section>
-      <Box className={colorPalm['gray']}>
-        <p>Case Study</p>
-      </Box>
+      <form action='' className='grid grid-cols-1 gap-4'>
+        <div className='grid grid-cols-3'>
+          <label className='col-span-1' htmlFor='firstName'>
+            first name:
+          </label>
+          <input
+            className='col-span-2'
+            type='text'
+            id='firstName'
+            name='firstName'
+          />
+        </div>
 
-      <Box className={colorPalm['yellow']} haveButton={false}>
-        <span>33%</span>
-        <span>Insurance</span>
-        <h2>Revolutionizing the Insurance Industry</h2>
-        <p>How an AI-Powered Chat Increased Sales by 33%</p>
-      </Box>
+        <div className='grid grid-cols-3'>
+          <label className='col-span-1' htmlFor='lastName'>
+            lastName:
+          </label>
+          <input
+            className='col-span-2'
+            type='text'
+            id='lastName'
+            name='last name'
+          />
+        </div>
 
-      <Box className={colorPalm['blue']} haveButton={false}>
-        <span>15%</span>
-        <span>Retail</span>
-        <h2>Enhancing Retail with AI</h2>
-        <p>Store Boosted Sales by 15% Using Personalized Recommendations</p>
-      </Box>
+        <div className='grid grid-cols-3'>
+          <label className='col-span-1' htmlFor='email'>
+            e-mail:
+          </label>
+          <input className='col-span-2' type='email' id='email' name='email' />
+        </div>
 
-      <Box className={colorPalm['pink']} haveButton={false}>
-        <span>40%</span>
-        <span>Hospital</span>
-        <h2>Revolutionizing the Insurance Industry</h2>
-        <p>Hospital Reduced Wait Times by 40%</p>
-      </Box>
+        <div className='grid grid-cols-3'>
+          <label className='col-span-1' htmlFor='phoneNumber'>
+            phone number:
+          </label>
+          <input
+            className='col-span-2'
+            type='tel'
+            id='phoneNumber'
+            name='phoneNumber'
+          />
+        </div>
+      </form>
     </section>
   );
 }
