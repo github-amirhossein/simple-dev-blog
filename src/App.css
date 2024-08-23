@@ -364,10 +364,12 @@ a{
     height: 350px;
     background-color: #e6bb12;
     float: left;
+    position: relative;
 }
 .head-box-zard{
     width: 100%;
     height: 100px;
+   
 }
 .head-box-zard button{
     font-size: 30px;
@@ -428,7 +430,15 @@ a{
 .o{
     background-color: #59045f !important;
 }
-
+.Retail{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: #59045f;
+}
+.Retail h2 , p{
+    color: #59045f;
+}
 
 
 @media only screen and (max-width:970px) {
@@ -629,7 +639,7 @@ a{
 
 }
 @media only screen and (max-width:535px) {
-    
+    .box-about{height: 1500px;}
     .join-team{
      display: none;
     }
@@ -809,6 +819,7 @@ a{
     }
 }
 @media only screen and (max-width:400px) {
+    .box-about{height: 1300px;}
 
     .body-about-developer{
         height: 320px;
