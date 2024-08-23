@@ -283,13 +283,13 @@ export default function  About(){
           <button>+</button>
     <div className="p-h">
       <div className="p1">
-          <p className='ph1' >2021</p>
+          <p className='ph1' >2022</p>
       </div>
       <div className="p2">    
           <p></p>
       </div>
-      <div className="p3">
-          <p className='ph3'>Retail</p>
+      <div className="p3  ppo">
+          <p className='ph3'>Finances</p>
       </div>    
     </div>
         </div>
@@ -297,7 +297,7 @@ export default function  About(){
           <h2>Bank Of America</h2>
           <p>Bank Improved Efficiency and Cut Costs</p>
         </div>
-        <div className="but-retail">
+        <div className="but-retail ol">
           <button className="ai-development sefid">
             <p>Neural networks</p>
             <img src={star} alt="" />
@@ -311,7 +311,37 @@ export default function  About(){
       </div>
 
 
+      <div className="box-pink">
+        <div className="head-box-zard">
+          <button>+</button>
+    <div className="p-h">
+      <div className="p1">
+          <p className='ph1' >2022</p>
+      </div>
+      <div className="p2">    
+          <p></p>
+      </div>
+      <div className="p3 ppi">
+          <p className='ph-3'>Healthcare</p>
+      </div>    
+    </div>
+        </div>
+        <div className="saint">
+          <h2>Insurance Industry</h2>
+          <p>AI-Powered Chat Increased Sales</p>
+        </div>
+        <div className="but-retail">
+          <button className="ai-development pink">
+            <p>Deep learning</p>
+            <img src={stars} alt="" />
+          </button>
+          <button className="indust pink">
+            <p>Neural networks</p>
+            <img src={stars} alt="" />
+          </button>
+        </div>
 
+      </div>
       
 
 
