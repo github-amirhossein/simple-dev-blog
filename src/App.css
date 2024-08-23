@@ -433,11 +433,58 @@ a{
 .Retail{
     position: absolute;
     left: 20px;
-    bottom: 30px;
+    bottom: 25px;
     color: #59045f;
 }
 .Retail h2 , p{
     color: #59045f;
+}
+.but-retail{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.ai-development{
+    float: left;
+    margin-right: 5px;
+    width: 160px;
+    border: 1px solid #000000;
+    background-color: #e6bb12;
+    border-radius: 30px;
+    height: 38px;
+    padding: 10px;
+}
+.ai-development p{
+    color: #000000;
+    margin: 0;
+    width: 110px;
+    float: left;
+    margin-top: 1px;
+} 
+.ai-development img{
+    width: 18px;
+    height: 18px;
+}
+.indust{
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #e6bb12;
+    border-radius: 30px;
+    height: 38px;
+    padding: 10px;
+}
+.indust p{
+    color: #000000;
+    margin: 0;
+    width: 110px;
+    float: left;
+    margin-top: 1px;
+}
+.indust img{
+    width: 18px;
+    height: 18px;
 }
 
 
