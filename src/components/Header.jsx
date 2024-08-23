@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { IconMenu } from './Icon';
 import { useLockBodyScroll } from '@uidotdev/usehooks';
@@ -6,34 +6,41 @@ import { ButtonDarkMode } from './ButtonDarkMode';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(
+    function () {
+      isDarkMode
+        ? document.documentElement.classList.add('dark')
+        : document.documentElement.classList.remove('dark');
+    },
+    [isDarkMode]
+  );
 
   function handleToggleMenu() {
-    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
+    setIsMenuOpen((open) => !open);
   }
 
   return (
-    <header className='fixed text-2xl top-0 left-0 z-30 bg-[#eee] dark:bg-black w-full flex justify-between items-center py-4 px-3 border-b-0 dark:border-b-2'>
-      <div className=' flex gap-4 items-center'>
-        <span className='text-yellow'>Code Club</span>
-          <ButtonDarkMode className='scale-125 border-spacing-2' />
-      </div>
+    <header className='fixed text-2xl top-0 left-0 z-30 bg-light dark:bg-gray w-full flex justify-between items-center py-4 px-3 shadow-lg shadow-light dark:shadow-gray'>
+      <ButtonDarkMode
+        onToggleDarkMode={setIsDarkMode}
+        isDarkMode={isDarkMode}
+        className='scale-125'
+      />
+      <span className='text-yellow'>Code Club</span>
 
-      <Navbar className={isMenuOpen ? 'rotate-0' : 'rotate-90'}>
-        <ButtonMenu onToggleMenu={handleToggleMenu} />
-      </Navbar>
+      <button className='p-2' onClick={handleToggleMenu}>
+        <IconMenu />
+      </button>
 
-      <ButtonMenu onToggleMenu={handleToggleMenu} />
+      <Navbar
+        onToggleMenu={handleToggleMenu}
+        className={isMenuOpen ? 'rotate-0' : 'rotate-90'}
+      />
 
       {isMenuOpen && <Layback />}
     </header>
-  );
-}
-
-export function ButtonMenu({ onToggleMenu }) {
-  return (
-    <button className='p-2' onClick={onToggleMenu}>
-      <IconMenu />
-    </button>
   );
 }
 

@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 export default function Section1() {
   return (
-    <section className='h-screen flex flex-col justify-center items-center'>
+    <section className='min-h-[calc(100vh-50px)] flex flex-col justify-center items-center'>
       <h1 className='text-6xl p-4 font-caveat text-center'>
         Building a <span className='text-yellow'>better</span> web, together
       </h1>
@@ -12,12 +14,12 @@ export default function Section1() {
         neque fugit dolorem iusto aperiam. Ullam sint magni tenetur!
       </p>
 
-      <a
-        href='/join'
+      <Link
+        to={'join'}
         className='block mx-auto border-2 border-yellow py-2 w-40 text-center rounded-full my-4 mb-20'
       >
-        Hire Us
-      </a>
+        Join Us
+      </Link>
     </section>
   );
 }
