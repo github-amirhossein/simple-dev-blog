@@ -608,84 +608,141 @@ z-index:99 ;
 .ol{
     bottom: 60px;
 }
-
 /*contact*/
 
-.row{
-    direction: rtl;
+.contact{
+    position: relative;
+    min-height: 670px;
+    padding: 0px 100px ;
     display: flex;
-    flex-wrap: wrap;
-
-}
-.contact-input{
-    width: 50%;
-    margin-bottom: 20px;
-  
+    align-items: center;
+    flex-direction: column;
     
-    
+    background: url(./img/bac.jpg) ;
+    background-size:cover;
 }
-.contact-input label{
-display: block;
-margin-bottom: 5px;
+.b{
+    background: rgba(0, 0, 0, 1);
+}
+.contact .content{
 
+    max-width: 800px;
+    text-align: center;
 }
-.contact-input input{
-    padding: 10px;
-    width: 90%;
-    border:1px solid #ccc ;
-    border-radius: 5px;
-
-}
-.massage{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.massage label{
-    display: block;
-    margin-bottom: 5px;
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
     color: #ffffff;
-    font-size: 17px;
 }
-.contact-btn{
-    height: 50px;
+.contact .content h2{
+    font-weight: 300;
+    color: #ffffff;
 }
-.contact-btn input{
-    margin: 0 15px;
-    width: 90px;
-    height: 40px;
-    color: #000000;
-    font-size: 20px;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
-#massage{
-    margin: 1%;
-    width: 93%;
-    margin-bottom: 20px;
-    height: 200px;
+
+.container .contactinfo{
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    height: 100px;
+    display: flex;
+
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 22px;
+
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+
+}
+.contactform{
+    width: 40%;
     padding: 10px;
-    border: 1px solid #ccc;
-    min-height: 150px;
+    background-color: rgba(255,255,255, 0.5);
 }
-.contaneres{
-    text-align: right;
-    width:93% ;
-    height: 96%;
-    padding: 15px 5% 20px 30px ;
-    float:right;
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input , .contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0 ;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.6);
+    color: #000000;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 12px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span , .contactform .inputbox input:valid ~ span , .contactform .inputbox textarea:focus ~ span , .contactform .inputbox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
+.box .icon img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
 
 
 
