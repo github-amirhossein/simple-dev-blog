@@ -7,6 +7,9 @@
 *{
     color: aliceblue;
 }
+button{
+    cursor: pointer;
+}
 
 
 body{
@@ -293,10 +296,10 @@ a{
    
 }
 .body-about-developer2{
-    width: 95%;
-    padding:0% 2% 0 2% ;
-    float: right;
-    margin-right: 2%;
+    width: 96%;
+    padding:0% 2% 0 0% ;
+    float: left ;
+    margin-left: 2%;
    
     height: 450px;
    
@@ -356,7 +359,7 @@ a{
 .box-rang{
     width: 90%;
     padding: 5%;
-    height: 2000px;
+    height: 850px;
 }
 .box-zard{
     border-radius: 35px;
@@ -542,6 +545,10 @@ z-index:99 ;
     transform: scale(1.1);
     z-index:99 ;
 }
+.box-pink:hover{
+    transform: scale(1.1);
+    z-index:99 ;
+}
 
 .box-sefid{
     border-radius: 35px;
@@ -556,11 +563,12 @@ z-index:99 ;
 .sefid{
     background-color: #ffffff;
    
+   
 }
 .bank{
     position: absolute;
     left: 20px;
-    bottom: 25px;
+    bottom: 20px;
 }
 .bank p{
     color: rgb(255, 0, 106);
@@ -569,11 +577,37 @@ z-index:99 ;
     color: rgb(255, 0, 106);
     font-weight: 100;
 }
+.box-pink{
+    border-radius: 35px;
+    margin-left: 10px;
+    width: 35% ;
+    margin-top: 10px;
+    height: 300px;
+    background-color: #E3007B;
+    float: left;
+    position: relative;
 
+}
+.pink{
+    background-color: #E3007B;
+    border: 1px solid #ffffff;
+}
 
+.pink p{
+    color: #ffffff;
+}
+.ppo{
+    width: 90px;
+}
+.saint{
+    position: absolute;
+    left: 20px;
+    top: 100px;
 
-
-
+}
+.ol{
+    bottom: 60px;
+}
 
 
 @media only screen and (max-width:970px) {
@@ -602,11 +636,74 @@ z-index:99 ;
         width: 90%;
     }
     .box-about{
-        height: 2100px;
+        
+        float: left;
     }
+    .box-zard{
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 290px;
+    }
+    .box-abi{
+        margin: 0;
+        margin-top:10px ;
+        width: 80%;
+        height: 300px;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .box-sefid{
+        margin-top: 10px;
+        height: 300px;
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .box-pink{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .insurance{
+        top : 100px;
+        
+    }
+    .bank{
+        bottom: 100px;
+    }
+    .Retail{
+        bottom: 100px;
+    }
+    .box-rang{
+        height: 1300px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (max-width:870px) {
-
+.box-about{
+    height: 2900px;
+}
 .body-about-developer{
     margin: 0;
     width: 60%;
@@ -774,7 +871,7 @@ z-index:99 ;
 
 }
 @media only screen and (max-width:535px) {
-    .box-about{height: 1500px;}
+    .box-about{height: 1700px;}
     .join-team{
      display: none;
     }
@@ -947,8 +1044,9 @@ z-index:99 ;
 .about-img-developer2 img{
     opacity: 1;
 }
-
-
+.but-retail{
+    display: none;
+}
 
 
 }
