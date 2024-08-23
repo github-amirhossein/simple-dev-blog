@@ -5,6 +5,7 @@ import imgr3 from '../img/amir.jpg'
 import imgr4 from '../img/Hossein.jpg'
 import exit from '../img/logout.png'
 import imgr5 from '../img/omid.jpg'
+import star from '../img/sparkle.png'
 
 
 
@@ -225,6 +226,16 @@ export default function  About(){
         <div className="Retail">
           <h2>Retail whit AI</h2>
           <p>Store Boosted Sales</p>
+        </div>
+        <div className="but-retail">
+          <button className="ai-development">
+            <p>AI-developmen</p>
+            <img src={star} alt="" />
+          </button>
+          <button className="indust">
+            <p>Industry 4.0</p>
+            <img src={star} alt="" />
+          </button>
         </div>
 
 
