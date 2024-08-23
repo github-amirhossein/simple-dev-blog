@@ -221,9 +221,25 @@ export default function  About(){
           <p className='ph3'>Retail</p>
       </div>    
     </div>
-
         </div>
+        <div className="Retail">
+          <h2>Retail whit AI</h2>
+          <p>Store Boosted Sales</p>
+        </div>
+
+
+
+
+
       </div>
+
+
+
+
+
+
+
+
     </div>
 
 
