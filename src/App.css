@@ -438,6 +438,7 @@ a{
 }
 .Retail h2{
     color: #59045f;
+    font-weight: 100;
 }
 .Retail p{
     color: #59045f;
@@ -513,6 +514,7 @@ a{
 }
 .insurance h2 , p{
     color: #ffffff;
+    font-weight: 100;
 
 
 }
@@ -553,9 +555,20 @@ z-index:99 ;
 }
 .sefid{
     background-color: #ffffff;
+   
 }
-
-
+.bank{
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+}
+.bank p{
+    color: rgb(255, 0, 106);
+}
+.bank h2{
+    color: rgb(255, 0, 106);
+    font-weight: 100;
+}
 
 
 
