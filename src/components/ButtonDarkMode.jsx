@@ -9,7 +9,6 @@ export function ButtonDarkMode({ className, size=8, border=false, onToggleDarkMo
         title='toggle theme'
         toggled={isDarkMode}
         toggle={onToggleDarkMode}
-        // onToggle={()=> }
         duration={750}
       />
     </div>
