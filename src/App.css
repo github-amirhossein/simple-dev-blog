@@ -620,13 +620,10 @@ z-index:99 ;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
-    background: url(./img/baco.jpg) ;
+   
     background-size:cover;
 }
-.b{
-    background: rgba(0, 0, 0, 1);
-}
+
 .contact .content{
 
     max-width: 800px;
