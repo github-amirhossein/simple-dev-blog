@@ -7,7 +7,7 @@ export default function Navbar({ className, onToggleMenu }) {
         origin-top-right duration-200
         ${className}`}
     >
-      <button className='size-10  self-end' onClick={onToggleMenu}>
+      <button className='size-10 self-end' onClick={onToggleMenu}>
         <IconClose />
       </button>
 

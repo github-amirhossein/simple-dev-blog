@@ -15,8 +15,8 @@ export default function Section2() {
 
   return (
     <section className='items-between relative'>
-      <h2 className='text-xl text-center pb-1'>Code Club Members Biograghie</h2>
-      <div className='grid py-4 pb-16 gap-1 grid-cols-1 md:grid-cols-2 m-auto'>
+      <h2 className='text-xl text-center pb-1'>Code Club Members</h2>
+      <div className='grid py-4 pb-16 gap-4 grid-cols-1 md:grid-cols-2 m-auto'>
         <MemberBio
           onOpenMoreInfo={handleOpenMoreInfo}
           imgSrc={noImage}
@@ -43,7 +43,7 @@ export default function Section2() {
       </div>
 
       {currentBio && (
-        <div className='absolute w-full h-[calc(100%-90px)] border-2 border-yellow bg-black top-[70px] z-20 left-0 p-8'>
+        <div className='absolute w-full h-full border-2 border-yellow bg-black top-0 z-20 left-0 p-8'>
           <button className='text-3xl p-4 border' onClick={handleCloseMoreInfo}>
             x
           </button>
