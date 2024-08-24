@@ -1,16 +1,11 @@
-import { IconClose } from './Icon';
-
-export default function Navbar({ className, onToggleMenu }) {
+export default function Navbar({ className }) {
   return (
     <nav
-      className={`absolute top-0 left-0 w-full flex flex-col  p-3 rounded-b-3xl bg-white text-black dark:bg-black dark:text-white border-4 border-yellow text-2xl z-30 
-        origin-top-right duration-200
-        ${className}`}
+      className={`absolute top-0 left-0 w-full flex flex-col p-4 pt-20
+        bg-white text-black dark:bg-black dark:text-white border-b-2 border-b-yellow
+          text-2xl z-20 transition-transform duration-700
+          ${className}`}
     >
-      <button className='size-10 self-end' onClick={onToggleMenu}>
-        <IconClose />
-      </button>
-
       <ul className='flex flex-col py-8 items-center gap-4'>
         <li>
           <a href='#'>About</a>
