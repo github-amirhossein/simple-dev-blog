@@ -33,10 +33,7 @@ export default function Header() {
         />
         <span className='text-yellow'>Code Club</span>
 
-        <Hamburger onToggle={handleToggleMenu} duration={0.8} />
-        {/* <button className='p-2' onClick={handleToggleMenu}>
-          <IconMenu />
-        </button> */}
+        <Hamburger onToggle={handleToggleMenu} duration={0.8} size={30} />
       </header>
 
       <Navbar className={isMenuOpen ? 'translate-y-0' : '-translate-y-full'} />

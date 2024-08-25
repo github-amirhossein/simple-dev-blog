@@ -5,14 +5,38 @@ export default function Join() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [responseText, setResponseText] = useState('');
+
+  const [firstNameError, setFirstNameError] = useState(null);
+  const [lastNameError, setLastNameError] = useState(null);
+  const [emailError, setEmailError] = useState(null);
+  const [phoneNumberError, setPhoneNumberError] = useState(null);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!email.includes('@')) return setResponseText('email is incorrect');
-    if (phoneNumber.length !== 11)
-      return setResponseText('phone number should have 11 character');
+    firstName
+      ? setFirstNameError(null)
+      : setFirstNameError('first name should be filled');
+
+    lastName
+      ? setLastNameError(null)
+      : setLastNameError('last name should be filled');
+
+    email.includes('@')
+      ? setEmailError(null)
+      : setEmailError('email should have @ sign');
+
+    phoneNumber.length === 11
+      ? setPhoneNumberError(null)
+      : setPhoneNumberError('phone number should have 11 character');
+
+    if (
+      !firstName ||
+      !lastName ||
+      !email.includes('@') ||
+      phoneNumber.length !== 11
+    )
+      return;
 
     const userData = {
       firstName,
@@ -39,6 +63,7 @@ export default function Join() {
     }
 
     // postUserData function need to invoke here with real api endpoint!
+    postUserData;
   }
 
   return (
@@ -48,82 +73,81 @@ export default function Join() {
         onSubmit={handleSubmit}
         className='grid grid-cols-1 gap-4'
       >
-        <div className='relative grid grid-cols-3'>
-          <label
-            className='absolute top-0 left-4 -translate-y-1/2 bg-black px-4 text-sm'
-            htmlFor='firstName'
-          >
-            first name
-          </label>
-          <input
-            className='col-span-3 bg-black border-2 border-light py-2 px-4 rounded-full text-xl'
-            type='text'
-            id='firstName'
-            name='firstName'
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-        </div>
+        <InputJoin
+          state={firstName}
+          setterFunction={setFirstName}
+          label='first name'
+          id='first-name'
+          errorState={firstNameError}
+        />
 
-        <div className='relative grid grid-cols-3'>
-          <label
-            className='absolute top-0 left-4 -translate-y-1/2 bg-black px-4 text-sm'
-            htmlFor='lastName'
-          >
-            lastName
-          </label>
-          <input
-            className='col-span-3 bg-black border-2 border-light py-2 px-4 rounded-full text-xl'
-            type='text'
-            id='lastName'
-            name='last name'
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-          />
-        </div>
+        <InputJoin
+          state={lastName}
+          setterFunction={setLastName}
+          label='last name'
+          id='last-name'
+          errorState={lastNameError}
+        />
 
-        <div className='relative grid grid-cols-3'>
-          <label
-            className='absolute top-0 left-4 -translate-y-1/2 bg-black px-4 text-sm'
-            htmlFor='email'
-          >
-            e-mail
-          </label>
-          <input
-            className='col-span-3 bg-black border-2 border-light py-2 px-4 rounded-full text-xl'
-            type='email'
-            id='email'
-            name='email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+        <InputJoin
+          state={email}
+          setterFunction={setEmail}
+          type='email'
+          label='e-mail'
+          id='user-email'
+          errorState={emailError}
+        />
 
-        <div className='relative grid grid-cols-3'>
-          <label
-            className='absolute top-0 left-4 -translate-y-1/2 bg-black px-4 text-sm'
-            htmlFor='phoneNumber'
-          >
-            phone number
-          </label>
-          <input
-            className='col-span-3 bg-black border-2 border-light py-2 px-4 rounded-full text-xl'
-            type='tel'
-            id='phoneNumber'
-            name='phoneNumber'
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(Number(e.target.value))}
-          />
-        </div>
+        <InputJoin
+          state={phoneNumber}
+          setterFunction={setPhoneNumber}
+          type='tel'
+          label='first name'
+          id='first-name'
+          errorState={phoneNumberError}
+        />
 
         <input
           type='submit'
           value='submit'
           className='block mx-auto border-2 border-yellow py-2 w-40 text-center rounded-full my-4'
         />
-
-        <p className='text-[#ff0000] text-center'>{responseText}</p>
       </form>
     </section>
   );
+}
+
+function InputJoin({
+  state,
+  setterFunction,
+  type = 'text',
+  label,
+  id,
+  errorState,
+}) {
+  return (
+    <div className='relative grid grid-cols-1'>
+      <label
+        className='absolute top-0 left-4 -translate-y-1/2 bg-white dark:bg-black px-4 text-sm'
+        htmlFor={id}
+      >
+        {label}
+      </label>
+
+      <input
+        className='bg-white dark:bg-black border-2 border-gray dark:border-light py-2 px-4 rounded-full text-xl'
+        type={type}
+        id={id}
+        name='last name'
+        value={state}
+        onChange={(e) => setterFunction(e.target.value)}
+      />
+
+      {errorState && <ErrorText>{errorState}</ErrorText>}
+    </div>
+  );
+}
+
+function ErrorText({ children }) {
+  return <p className='text-[#ff0000]'>{children}</p>;
 }
