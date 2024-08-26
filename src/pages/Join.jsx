@@ -26,15 +26,12 @@ export default function Join() {
       ? setEmailError(null)
       : setEmailError('email should have @ sign');
 
-    phoneNumber.length === 11
-      ? setPhoneNumberError(null)
-      : setPhoneNumberError('phone number should have 11 character');
 
     if (
       !firstName ||
       !lastName ||
       !email.includes('@') ||
-      phoneNumber.length !== 11
+      ! File
     )
       return;
 
@@ -42,7 +39,7 @@ export default function Join() {
       firstName,
       lastName,
       email,
-      phoneNumber,
+      File,
     };
 
     async function postUserData(api) {
