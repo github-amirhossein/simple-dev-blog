@@ -609,6 +609,11 @@ z-index:99 ;
 .ol{
     bottom: 60px;
 }
+
+
+
+
+
 /*contact*/
 
 .contact{
@@ -735,21 +740,48 @@ z-index:99 ;
     font-size: 18px;
 }
 
-
-
-
-
 .box .icon img{
     width: 40px;
     height: 40px;
     margin-top: 10px;
 }
 
+
+
+
+
+
+
+
+@media only screen and (max-width:1600px){
+.contact{
+    padding: 25px;
+}
+}
+
+
+
+
+
+
 @media only screen and (max-width:1600px) {
     .contact{
         height: 750px;
     }
 
+}
+
+@media only screen and (max-width:650px){
+.container{
+    flex-direction: column;
+}
+.container .contactinfo{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.container .contactform{
+    width: 100%;
+}
 }
 
 
@@ -912,9 +944,6 @@ z-index:99 ;
     margin: 0;
     height: 350px;
     width: 100%;
-}
-.contact{
-    padding: 25px;
 }
 
 
@@ -1250,6 +1279,9 @@ z-index:99 ;
 }
 .head-box-zard button{
     margin-top: 2px;
+}
+.header-team{
+    width: 40%;
 }
 
 
