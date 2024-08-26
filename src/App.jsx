@@ -8,19 +8,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <main className='py-20 px-2 min-h-[calc(100vh-50px)]'>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' index element={<Home />} />
-            <Route path='/join' element={<Join />} />
-            <Route path='/donate' element={<Donate />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path='/' index element={<Home />} />
+          <Route path='/join' element={<Join />} />
+          <Route path='/donate' element={<Donate />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

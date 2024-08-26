@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Squeeze as Hamburger } from 'hamburger-react';
+import { Link } from 'react-router-dom';
 
-// components
+// import components
 import Navbar from './Navbar';
 import { useLockBodyScroll } from '@uidotdev/usehooks';
 import { ButtonDarkMode } from './ButtonDarkMode';
@@ -25,14 +26,18 @@ export default function Header() {
 
   return (
     <>
-      <header className='fixed text-2xl top-0 left-0 z-30 bg-darkGray text-lightGray w-full flex justify-between items-center py-4 px-3 shadow-lg shadow-light dark:shadow-gray'>
+      <header className='fixed text-2xl top-0 left-0 z-30 bg-white dark:bg-black w-full flex justify-between items-center px-3 shadow-md shadow-lightGray dark:shadow-darkGray'>
         <ButtonDarkMode
           onToggleDarkMode={setIsDarkMode}
           isDarkMode={isDarkMode}
           className='scale-125'
         />
 
-        <Hamburger onToggle={handleToggleMenu} duration={0.8} size={30} />
+        <Link to='/' className='text-yellow' title='navigate to home'>
+          Code Club
+        </Link>
+
+        <Hamburger onToggle={handleToggleMenu} duration={0.7} size={30} />
       </header>
 
       <Navbar className={isMenuOpen ? 'translate-y-0' : '-translate-y-full'} />

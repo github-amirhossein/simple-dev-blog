@@ -18,7 +18,7 @@ export function MemberBio({ imgSrc, onOpenMoreInfo, memberName = 'Omid' }) {
         <div className='flex justify-between items-center h-8'>
           <button
             onClick={onOpenMoreInfo}
-            className='underline rounded-full text-yellow px-5 hover:bg-yellow hover:text-black'
+            className='underline rounded-full text-yellow px-5 hover:bg-yellow hover:text-black self-stretch'
           >
             more info
           </button>
