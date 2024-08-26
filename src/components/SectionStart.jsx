@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Section1() {
   return (
-    <section className='min-h-[calc(100vh-50px)] flex flex-col justify-center items-center'>
+    <section className='min-h-screen flex flex-col justify-center items-center'>
       <h1 className='text-6xl p-4 font-caveat text-center'>
         Building a <span className='text-yellow'>better</span> web, together
       </h1>
