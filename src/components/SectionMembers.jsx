@@ -2,6 +2,55 @@ import { useState } from 'react';
 import noImage from './../assets/images/no-image-available.jpg';
 import { MemberBio } from './MemberBio';
 
+const membersInformation = [
+  { 
+    id: 1,
+    name: 'Amir',
+    imgSrc: noImage,
+    shortBiograghi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id consectetur amet consequatur, sit corrupti ex libero iusto iste dolore sunt!',
+    moreInfo: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia sint, autem corrupti eveniet expedita facilis quos. Reprehenderit dicta deserunt voluptas modi nulla! Iusto enim voluptatum minus minima fuga cumque.
+    Molestiae quo voluptates est aspernatur. Placeat adipisci quae hic harum laborum fuga quod maxime, dolore, quasi blanditiis perspiciatis. Veniam quam necessitatibus recusandae repellat, placeat libero ex fugiat assumenda quas nulla.
+    Distinctio aperiam blanditiis deleniti eligendi voluptatibus rerum magnam qui esse sequi nesciunt facilis consequatur sit recusandae quos eaque tempore, atque nobis quaerat incidunt dolorum hic! Sint provident animi libero facere!`
+  },
+  { 
+    id: 2,
+    name: 'Hooman',
+    imgSrc: noImage,
+    shortBiograghi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id consectetur amet consequatur, sit corrupti ex libero iusto iste dolore sunt!',
+    moreInfo: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia sint, autem corrupti eveniet expedita facilis quos. Reprehenderit dicta deserunt voluptas modi nulla! Iusto enim voluptatum minus minima fuga cumque.
+    Molestiae quo voluptates est aspernatur. Placeat adipisci quae hic harum laborum fuga quod maxime, dolore, quasi blanditiis perspiciatis. Veniam quam necessitatibus recusandae repellat, placeat libero ex fugiat assumenda quas nulla.
+    Distinctio aperiam blanditiis deleniti eligendi voluptatibus rerum magnam qui esse sequi nesciunt facilis consequatur sit recusandae quos eaque tempore, atque nobis quaerat incidunt dolorum hic! Sint provident animi libero facere!`
+  },
+  { 
+    id: 3,
+    name: 'Hossein',
+    imgSrc: noImage,
+    shortBiograghi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id consectetur amet consequatur, sit corrupti ex libero iusto iste dolore sunt!',
+    moreInfo: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia sint, autem corrupti eveniet expedita facilis quos. Reprehenderit dicta deserunt voluptas modi nulla! Iusto enim voluptatum minus minima fuga cumque.
+    Molestiae quo voluptates est aspernatur. Placeat adipisci quae hic harum laborum fuga quod maxime, dolore, quasi blanditiis perspiciatis. Veniam quam necessitatibus recusandae repellat, placeat libero ex fugiat assumenda quas nulla.
+    Distinctio aperiam blanditiis deleniti eligendi voluptatibus rerum magnam qui esse sequi nesciunt facilis consequatur sit recusandae quos eaque tempore, atque nobis quaerat incidunt dolorum hic! Sint provident animi libero facere!`
+  },
+  { 
+    id: 4,
+    name: 'Mariam',
+    imgSrc: noImage,
+    shortBiograghi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id consectetur amet consequatur, sit corrupti ex libero iusto iste dolore sunt!',
+    moreInfo: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia sint, autem corrupti eveniet expedita facilis quos. Reprehenderit dicta deserunt voluptas modi nulla! Iusto enim voluptatum minus minima fuga cumque.
+    Molestiae quo voluptates est aspernatur. Placeat adipisci quae hic harum laborum fuga quod maxime, dolore, quasi blanditiis perspiciatis. Veniam quam necessitatibus recusandae repellat, placeat libero ex fugiat assumenda quas nulla.
+    Distinctio aperiam blanditiis deleniti eligendi voluptatibus rerum magnam qui esse sequi nesciunt facilis consequatur sit recusandae quos eaque tempore, atque nobis quaerat incidunt dolorum hic! Sint provident animi libero facere!`
+  },
+  { 
+    id: 5,
+    name: 'Omid',
+    imgSrc: noImage,
+    shortBiograghi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis id consectetur amet consequatur, sit corrupti ex libero iusto iste dolore sunt!',
+    moreInfo: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia sint, autem corrupti eveniet expedita facilis quos. Reprehenderit dicta deserunt voluptas modi nulla! Iusto enim voluptatum minus minima fuga cumque.
+    Molestiae quo voluptates est aspernatur. Placeat adipisci quae hic harum laborum fuga quod maxime, dolore, quasi blanditiis perspiciatis. Veniam quam necessitatibus recusandae repellat, placeat libero ex fugiat assumenda quas nulla.
+    Distinctio aperiam blanditiis deleniti eligendi voluptatibus rerum magnam qui esse sequi nesciunt facilis consequatur sit recusandae quos eaque tempore, atque nobis quaerat incidunt dolorum hic! Sint provident animi libero facere!`
+  },
+  
+]
+
 export default function Section2() {
   const [currentBio, setCurrentBio] = useState(null);
 
@@ -15,31 +64,9 @@ export default function Section2() {
 
   return (
     <section className='items-between relative'>
-      <h2 className='text-xl text-center pb-1'>Code Club Members</h2>
+      <h2 className='text-xl text-center'>Code Club Members</h2>
       <div className='grid py-4 pb-16 gap-4 grid-cols-1 md:grid-cols-2 m-auto'>
-        <MemberBio
-          onOpenMoreInfo={handleOpenMoreInfo}
-          imgSrc={noImage}
-          memberName='Amir'
-        />
-
-        <MemberBio
-          onOpenMoreInfo={handleOpenMoreInfo}
-          imgSrc={noImage}
-          memberName='Hooman'
-        />
-
-        <MemberBio
-          onOpenMoreInfo={handleOpenMoreInfo}
-          imgSrc={noImage}
-          memberName='Hossein'
-        />
-
-        <MemberBio
-          onOpenMoreInfo={handleOpenMoreInfo}
-          imgSrc={noImage}
-          memberName='Omid'
-        />
+        {membersInformation.map(member => <MemberBio memberName={member.name} imgSrc={member.imgSrc} shortBiographie={member.shortBiograghi} onOpenMoreInfo={() => handleOpenMoreInfo(member.id)} key={'member '+member.id}/> )}
       </div>
 
       {currentBio && (
