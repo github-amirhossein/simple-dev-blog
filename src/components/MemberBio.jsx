@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import coffee from './../assets/images/coffee.svg';
 
 export function MemberBio({ imgSrc, onOpenMoreInfo, memberName = 'Omid' }) {
@@ -8,24 +9,27 @@ export function MemberBio({ imgSrc, onOpenMoreInfo, memberName = 'Omid' }) {
       </div>
 
       <div className='col-span-8 md:col-span-7 pl-4 flex flex-col justify-between'>
-        <h3 className='border-l-2 border-yellow p-2'>
-          {memberName}
-        </h3>
+        <h3 className='border-l-2 border-yellow p-2'>{memberName}</h3>
         <p className='text-justify my-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
           quisquam vel!
         </p>
 
-        <div className='flex justify-between h-8'>
+        <div className='flex justify-between items-center h-8'>
           <button
             onClick={onOpenMoreInfo}
             className='underline rounded-full text-yellow px-5 hover:bg-yellow hover:text-black'
           >
             more info
           </button>
-          <button className='size-8 self-center bg-white overflow-hidden rounded-lg'>
+
+          <Link
+            to='donate'
+            title='buy me a coffe'
+            className='size-8 flex justify-center items-center bg-white overflow-hidden rounded-lg'
+          >
             <img className='scale-150' src={coffee} alt='buy me a coffe' />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

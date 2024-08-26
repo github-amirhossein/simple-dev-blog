@@ -25,13 +25,12 @@ export default function Header() {
 
   return (
     <>
-      <header className='fixed text-2xl top-0 left-0 z-30 bg-light dark:bg-gray w-full flex justify-between items-center py-4 px-3 shadow-lg shadow-light dark:shadow-gray'>
+      <header className='fixed text-2xl top-0 left-0 z-30 bg-darkGray text-lightGray w-full flex justify-between items-center py-4 px-3 shadow-lg shadow-light dark:shadow-gray'>
         <ButtonDarkMode
           onToggleDarkMode={setIsDarkMode}
           isDarkMode={isDarkMode}
           className='scale-125'
         />
-        <span className='text-yellow'>Code Club</span>
 
         <Hamburger onToggle={handleToggleMenu} duration={0.8} size={30} />
       </header>

@@ -15,7 +15,7 @@ export default function Section1() {
       </p>
 
       <Link
-        to={'join'}
+        to='/join'
         className='block mx-auto border-2 border-yellow py-2 w-40 text-center rounded-full my-4 mb-20'
       >
         Join Us
