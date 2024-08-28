@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import arrow from './img/down-arrow.png'
-import close from './img/close.png'
+import arrow from '../assets/images/down-arrow.png'
+import close from '../assets/images/close.png '
 
 
 export default function Panel() {
